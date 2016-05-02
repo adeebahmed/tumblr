@@ -30,9 +30,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25em; 
+  font-size: 2em; 
   line-height: 1.4400000000000002em; 
   padding-top: 0.6333333333333334em;
+	font-weight:500;
+	border-bottom: .1em solid red;
 }
 
 h3{
@@ -48,13 +50,13 @@ img {
 
 main{
   display:block;
-  justify-content:center;
+  justify-content:flex-start;
   background-color:white;
   border-color:white;
   padding:1.5em;
   border-radius:.3em;
   opacity:.9;
-  text-align:center;
+  text-align:left;
   margin-bottom:1.25em;
 }
 
@@ -69,7 +71,7 @@ li{
 
 a {
 		transition: color 0.2s ease, border-color 0.2s ease;
-		color: inherit;
+		color: red;
 		text-decoration: none;
 	}
 
@@ -78,7 +80,7 @@ a:hover {
   cursor:pointer;
 }
 
-p a{
+pp a{
     color: red;
 }
 
@@ -93,7 +95,6 @@ p{
   font-family: 'Source Sans Pro', sans-serif;
   font-size:1em;
   font-weight:500;
-  max-width:35em;
   text-align:left;
   text-transform:none;
   letter-spacing: normal;
@@ -222,6 +223,15 @@ form{
 	color:whitesmoke;
 }
 
+.postIcon{
+	height:1em;
+	width:1em;
+}
+
+.postTitle{
+	font-weight:700;
+}
+
 /*
 .g-recaptcha div { 
   margin-left: auto; margin-right: auto;
@@ -233,7 +243,7 @@ form{
   @media screen and (max-width: 40.625em) { 
     html {
         background-repeat:no-repeat;
-        background: url('../img/chicago-night-mobile.jpg');
+        background: url('https://secure.static.tumblr.com/zkqisnq/JBco6j024/chicago-night-mobile.jpg');
         text-align:center;
     }
     p{
