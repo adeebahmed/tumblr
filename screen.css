@@ -1,0 +1,246 @@
+﻿@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
+
+/* Reset styles */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Base styles */
+html {
+  font-size: 1em;
+  line-height: 1.4400000000000002em; 
+  padding-top: 1.4400000000000002em; 
+  padding-left: 1.200em;
+  padding-right: 1.200em; 
+
+  background: url('../img/chicago-night.jpeg');
+  background-repeat: no-repeat;
+		background-size: 100% 100%, cover;
+		background-attachment:fixed;
+
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight:300 ;
+  letter-spacing: 0.25em;
+		text-transform: uppercase;
+  line-height: 2;
+}
+
+h1 {
+  font-size: 1.728em; 
+  line-height: 1.4400000000000002em; 
+  padding-top: 0.8333333333333334em;
+}
+
+h2 {
+  font-size: 1.25em; 
+  line-height: 1.4400000000000002em; 
+  padding-top: 0.6333333333333334em;
+}
+
+h3{
+  font-size:1em;
+  padding-top: 0.8333333333333334em; 
+  padding-bottom: 0.8333333333333334em; 
+}
+
+img {
+  display: inline;
+  max-width: 100%; 
+}
+
+main{
+  display:block;
+  justify-content:center;
+  background-color:white;
+  border-color:white;
+  padding:1.5em;
+  border-radius:.3em;
+  opacity:.9;
+  text-align:center;
+  margin-bottom:1.25em;
+}
+
+footer{
+  padding: 2em;
+  padding-bottom:.5em;
+}
+
+li{
+  display:inline;
+}
+
+a {
+		transition: color 0.2s ease, border-color 0.2s ease;
+		color: inherit;
+		text-decoration: none;
+	}
+
+a:hover {
+  color: red;
+  cursor:pointer;
+}
+
+p a{
+    color: red;
+}
+
+nav{
+  justify-content:center;
+}
+nav a {
+  font-size:16px;
+}
+
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:1em;
+  font-weight:500;
+  max-width:35em;
+  text-align:left;
+  text-transform:none;
+  letter-spacing: normal;
+  padding:1em;
+  line-height:1.5em;
+  border:none;
+  padding:.5em;
+}
+
+p.intro{
+  text-align:center;
+  padding:.25em, 0, 1em, 0;
+  line-height:1em;
+  font-size:1em;
+}
+
+input[type="text"],input[type="email"],textarea{
+  width:100%;
+  margin-bottom:1.5em;
+  border-radius:.1em;
+  font-family:"Source Sans Pro";
+  font-size:1.25em;
+  padding: .25em;
+  margin-left:-.25em;
+  border: solid .0005em grey;
+}
+
+form{
+  max-width:30em;
+}
+
+
+/* Layout styles*/
+#introduction{
+  margin-top:-6em;
+  padding-top:5em;
+  border-top:solid .001em;
+  border-color: gray;
+  font-size:1.25em;
+}
+
+#download{
+  font-size: 1.728em; 
+  line-height: 1.6666666666666667em; 
+  padding-top: 0.8333333333333334em; 
+  padding-bottom: 0.8333333333333334em; 
+  border-top:solid .001em;
+  border-color: gray;
+}
+
+#bgcredit{
+  font-size:.75em;
+}
+
+#mypic{
+  padding-top: 1.728em;
+  padding-bottom: 0.8333333333333334em;
+  border-radius:100%;
+  max-width:12em;
+}
+
+#line{
+  margin-top: -6em;
+  padding-top: 6em;
+  border-top: solid .001em;
+  border-color: gray;
+}
+
+#btnSend{
+  border : solid .1em #e6e6e6;
+  border-radius : .1875em;
+  font-size : 1.25em;
+  color : #696869;
+  padding : .25em 1em;
+  margin-top:1em;
+  margin-left: auto; 
+  margin-right: auto;
+  background : #ffffff;
+  background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(49%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6));
+  background : -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 49%, #e1e1e1 51%, #f6f6f6 100%);
+  background : -webkit-linear-gradient(top, #ffffff 0%, #f1f1f1 49%, #e1e1e1 51%, #f6f6f6 100%);
+  background : -o-linear-gradient(top, #ffffff 0%, #f1f1f1 49%, #e1e1e1 51%, #f6f6f6 100%);
+  background : -ms-linear-gradient(top, #ffffff 0%, #f1f1f1 49%, #e1e1e1 51%, #f6f6f6 100%);
+  background : linear-gradient(top, #ffffff 0%, #f1f1f1 49%, #e1e1e1 51%, #f6f6f6 100%);
+}
+
+#btnSend:hover{
+  background : whitesmoke;
+}
+
+#tempCaptcha{
+  text-transform:none;
+  display:inline;
+
+}
+
+#answer{
+  display:inline;
+  max-width:1.5em;
+}
+
+
+/*Modular styles*/
+.icons img
+{
+  width:5em;
+  margin-top:0.8333333333333334em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.success{
+  font-size:.95em;
+  color:green;
+  font-weight:bold;
+  text-transform:none;
+}
+
+.error{
+  font-size:1em;
+  color:red;
+  text-transform:uppercase;
+}
+
+/*
+.g-recaptcha div { 
+  margin-left: auto; margin-right: auto;
+}
+*/
+
+
+/* Media query styles*/
+  @media screen and (max-width: 40.625em) { 
+    html {
+        background-repeat:no-repeat;
+        background: url('../img/chicago-night-mobile.jpg');
+        text-align:center;
+    }
+    p{
+      padding:.25em;
+    }
+ 
+  }
+
+  /*add media query to remove padding top from h3 when screen is > 1000 px*/
+ @media screen and (max-width: 40.625em) { 
+    h3{
+      padding-top:0em;
+    }
+ }
