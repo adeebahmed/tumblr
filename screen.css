@@ -24,13 +24,13 @@ html {
 }
 
 h1 {
-  font-size: 1.728em; 
+  font-size: 2em; 
   line-height: 1.4400000000000002em; 
   padding-top: 0.8333333333333334em;
 }
 
 h2 {
-  font-size: 2em; 
+  font-size: 1.728em; 
   line-height: 1.4400000000000002em; 
   padding-top: 0.6333333333333334em;
 	font-weight:500;
@@ -41,6 +41,7 @@ h3{
   font-size:1em;
   padding-top: 0.8333333333333334em; 
   padding-bottom: 0.8333333333333334em; 
+	text-transform: none;
 }
 
 img {
@@ -140,6 +141,15 @@ i{
 
 figure{
 	padding-top:3.25em;
+	opacity:1;
+	text-align:center
+}
+
+figcaption p{
+	text-align:center;
+	font-size:1.5em;
+	font-weight:500;
+	font-style:italic;
 }
 
 
