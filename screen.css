@@ -19,7 +19,7 @@ html {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight:300 ;
   letter-spacing: 0.25em;
-		text-transform: uppercase;
+	text-transform: uppercase;
   line-height: 2;
 }
 
@@ -54,6 +54,7 @@ article{
   background-color:white;
   border-color:white;
   padding:1.5em;
+	padding-top:0em;
   border-radius:.3em;
   opacity:.9;
   text-align:left;
@@ -124,6 +125,16 @@ input[type="text"],input[type="email"],textarea{
 
 form{
   max-width:30em;
+}
+
+b{
+	font-weight:800;
+	color:black;
+}
+
+i{
+	font-style:italic;
+	font-weight:600;
 }
 
 
@@ -230,6 +241,21 @@ form{
 
 .postTitle{
 	font-weight:700;
+	padding-top:1.1em;
+}
+
+.postType{
+	background-color:red;
+	color:whitesmoke;
+	padding:1em .5em .75em .5em;
+	width:8.25em;
+	border-radius: 0em 0em.3em .3em;
+	float:right;
+}
+
+.postDate{
+	float:right;
+	margin-top:-1em;
 }
 
 /*
