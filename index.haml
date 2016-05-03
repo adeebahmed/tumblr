@@ -5,20 +5,22 @@
 	%link{rel: "stylesheet", href: " https://secure.static.tumblr.com/zkqisnq/5Ngo6j03r/screen.css"}
   %body
 	%header#header
-	  %h1.title {Title}
+		%h1.title {Title}
 		%h3.title {description}
-	#flex-container
-	  %main.item
-		{block:Posts}
-		{block:Text}
-			%h2 Destination 
-				%a.postTitle{ :href => "https://www.google.com/search?q=target+headquarets&ie=utf-8&oe=utf-8#q=target+hq"} Target
-				%img{:src => "https://secure.static.tumblr.com/zkqisnq/GHMo6j2f1/target-logo.jpg", :class => "postIcon"}
-			%p Started this blog for my COM372 class and am actully going to try and continue it! I'm currently a junior attending universtiy at the Illinois Institute of Technology.
-			%p Firstly, i'd like to thank to my professor Karl Stolley for his guidence this past semester. This course has given me the skills to build a solid online presense.
-			%p I'm very excited to live in Minniapolis, Minnisota during my internship!
-		{/block:Text}
-	%footer#footer
-		{/block:Posts}
-	
-	
+		#flex-container
+			{block:Posts}
+			{block:Text}
+				%article
+					%header
+						%h4.postType Blog Post
+						{block:Title}
+							%h2.postTitle
+								%a{ :href => "{Permalink}"} {Title}
+						{/block:Title}
+					.section	
+						.main 
+							{body}
+					%footer#footer
+			{/block:Text}
+			{/block:Posts}
+

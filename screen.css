@@ -34,7 +34,7 @@ h2 {
   line-height: 1.4400000000000002em; 
   padding-top: 0.6333333333333334em;
 	font-weight:500;
-	border-bottom: .1em solid red;
+	border-bottom: .01em solid red;
 }
 
 h3{
@@ -48,7 +48,7 @@ img {
   max-width: 100%; 
 }
 
-main{
+article{
   display:block;
   justify-content:flex-start;
   background-color:white;
@@ -93,7 +93,7 @@ nav a {
 
 p{
   font-family: 'Source Sans Pro', sans-serif;
-  font-size:1em;
+  font-size:1.25em;
   font-weight:500;
   text-align:left;
   text-transform:none;
