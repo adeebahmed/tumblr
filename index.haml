@@ -2,7 +2,7 @@
 %html
 	%head
 	%title Adeeb Ahmed - Blog
-	%link{rel: "stylesheet", href: " https://secure.static.tumblr.com/zkqisnq/H7po6128v/screen.css"}
+	%link{rel: "stylesheet", href: " https://secure.static.tumblr.com/zkqisnq/Bzao614uu/screen.css"}
 	%body
 	%header#header
 		%h1.title {Title}
@@ -15,7 +15,7 @@
 						%h4.postType Blog Post
 						{block:Title}
 							%h2.postTitle
-								%a{ :href => "{Permalink}"} {Title}
+								%a{:href => "{Permalink}"} {Title}
 						{/block:Title}
 					.section	
 						.main 
@@ -23,5 +23,14 @@
 					%footer
 						%a.postDate{:href => "{Permalink}"} Posted on {Month} {DayOfMonth}, {Year}
 			{/block:Text}
+			{block:Photo}
+				%article
+					%h4.postType Photo
+					%figure{aria-labelledby: "photo{PostID}"}
+            %img{src: "{PhotoURL-HighRes}", alt: "{PhotoAlt}"}
+            %figcaption{id: "photo{PostID}"} {Caption}
+					%footer
+						%a.postDate{:href => "{Permalink}"} Posted on {Month} {DayOfMonth}, {Year}
+			{/block:Photo}
 			{/block:Posts}
 

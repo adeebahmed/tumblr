@@ -59,6 +59,7 @@ article{
   opacity:.9;
   text-align:left;
   margin-bottom:1.25em;
+	width:60%;
 }
 
 footer{
@@ -134,7 +135,11 @@ b{
 
 i{
 	font-style:italic;
-	font-weight:600;
+	font-weight:500;
+}
+
+figure{
+	padding-top:3.25em;
 }
 
 
@@ -275,12 +280,15 @@ i{
     p{
       padding:.25em;
     }
- 
-  }
-
-  /*add media query to remove padding top from h3 when screen is > 1000 px*/
- @media screen and (max-width: 40.625em) { 
-    h3{
+		h3{
       padding-top:0em;
     }
- }
+		article{
+			width:90%;
+			padding: 0em 1em 1em 1em;
+		}
+	 footer{
+		padding: 1em;
+		padding-bottom:.5em;
+		}
+  }

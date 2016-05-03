@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Adeeb Ahmed - Blog</title>
-    <link href=" https://secure.static.tumblr.com/zkqisnq/H7po6128v/screen.css" rel="stylesheet"></link>
+    <link href=" https://secure.static.tumblr.com/zkqisnq/Bzao614uu/screen.css" rel="stylesheet"></link>
   </head>
   <body>
     <header id="header">
@@ -30,6 +30,18 @@
 							</footer>
 					</article>
         {/block:Text}
+				{block:Photo}
+					<article>
+						<h4 class="postType">Photo</h4>
+						<figure aria-labelledby='photo{PostID}'>
+							<img src='{PhotoURL-HighRes}' alt='{PhotoAlt}' />
+							<figcaption id='photo{PostID}'>{Caption}</figcaption>
+						</figure>
+						<footer>
+							<a href="{Permalink}" class="postDate">Posted on {Month} {DayOfMonth}, {Year}</a>
+						</footer>
+					</article>
+        {/block:Photo}
         {/block:Posts}
       </div>
     </header>
