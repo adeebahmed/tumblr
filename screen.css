@@ -297,10 +297,15 @@ figcaption p{
 		article{
 			width:90%;
 			padding: 0em 1em 1em 1em;
-			margin-left:-.25em;
+			margin-left:-.45em;
 		}
 	 footer{
 		padding: 1em;
 		padding-bottom:.5em;
+		}
+		.postDate{
+			font-size:.75em;
+			margin-top:.-5em;
+			margin-right:-1.5em;
 		}
   }
