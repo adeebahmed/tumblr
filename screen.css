@@ -61,6 +61,7 @@ article{
   text-align:left;
   margin-bottom:1.25em;
 	width:60%;
+	margin-left:1em;
 }
 
 footer{
@@ -130,7 +131,7 @@ form{
 }
 
 b{
-	font-weight:800;
+	font-weight:600;
 	color:black;
 }
 
@@ -296,6 +297,7 @@ figcaption p{
 		article{
 			width:90%;
 			padding: 0em 1em 1em 1em;
+			margin-left:-.25em;
 		}
 	 footer{
 		padding: 1em;
