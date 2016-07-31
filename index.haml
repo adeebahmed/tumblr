@@ -1,37 +1,45 @@
 !!! 5
 %html
-	%head
-		%title Adeeb Ahmed - Blog
-		%meta{name: "viewport", content: "width=device-width,initial-scale=1.0,shrink-to-fit=no"}
-		%link{rel: "stylesheet", href: "https://secure.static.tumblr.com/zkqisnq/Bzao614uu/screen.css"}
-		%link{rel: "shortcut icon", href: "http://adeebahmed.com/favicon.ico"}
-	%body
-		%header#header
-			%h1.title {Title}
-			%h3.title {description}
-			#flex-container
-				{block:Posts}
-				{block:Text}
-					%article
-						%header
-							%h4.postType Blog Post
-							{block:Title}
-								%h2.postTitle
-									%a{:href => "{Permalink}"} {Title}
-							{/block:Title}
-						.section	
-							.main 
-								{body}
-						%footer
-							%a.postDate{:href => "{Permalink}"} Posted on {Month} {DayOfMonth}, {Year}
-				{/block:Text}
-				{block:Photo}
-					%article
-						%h4.postType Photo
-						%figure{aria-labelledby: "photo{PostID}"}
-							%img{src: "{PhotoURL-500}", alt: "{PhotoAlt}"}
-							%figcaption{id: "photo{PostID}"} {Caption}
-						%footer
-							%a.postDate{:href => "{Permalink}"} Posted on {Month} {DayOfMonth}, {Year}
-				{/block:Photo}
-				{/block:Posts}
+  %head
+    %title Adeeb Ahmed - Blog
+    %meta{name: "viewport", content: "width=device-width,initial-scale=1.0,shrink-to-fit=no"}
+    %link{rel: "stylesheet", href: "https://secure.static.tumblr.com/zkqisnq/Bzao614uu/screen.css"}
+    %link{rel: "shortcut icon", href: "http://adeebahmed.com/favicon.ico"}
+  %body
+    %header#header
+      %h1.title {Title}
+      %h3.title {description}
+      #flex-container
+        {block:Posts}
+        {block:Text}
+          %article
+            %header
+              %h4.postType Blog Post
+              {block:Title}
+                %h2.postTitle
+                  %a{:href => "{Permalink}"} {Title}
+              {/block:Title}
+            .section  
+              .main 
+                {body}
+            %footer
+              %a.postDate{:href => "{Permalink}"} Posted on {Month} {DayOfMonth}, {Year}
+        {/block:Text}
+        {block:Photo}
+          %article
+            %h4.postType Photo
+            %figure{aria-labelledby: "photo{PostID}"}
+              %img{src: "{PhotoURL-500}", alt: "{PhotoAlt}"}
+              %figcaption{id: "photo{PostID}"} {Caption}
+            %footer
+              %a.postDate{:href => "{Permalink}"} Posted on {Month} {DayOfMonth}, {Year}
+        {/block:Photo}
+        {block:Video} 
+          %article
+            #h4.postType Video
+            #h4 {PlayCountWithLabel}
+            
+            %footer
+              %a.postDate{:href => "{Permalink}"} Posted on {Month} {DayOfMonth}, {Year}
+        {/block:Video}
+        {/block:Posts}
